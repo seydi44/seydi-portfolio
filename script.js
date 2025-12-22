@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // EN / TR text göster
     langElements.forEach((el) => {
       if (el.classList.contains("lang-" + active)) {
-        el.style.display = "";      // göster
+        el.style.display = "";
       } else {
-        el.style.display = "none";  // gizle
+        el.style.display = "none";
       }
     });
 

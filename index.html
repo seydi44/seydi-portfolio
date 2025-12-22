@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="Cloud & AI Engineer specializing in Microsoft Azure, Data & AI, Power Platform, Power BI, Fabric and multi-cloud architectures."
+    content="Cloud & AI Engineer specializing in Microsoft Azure, Data & AI, Power Platform, Power BI, Fabric and Oracle Cloud."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,21 +40,21 @@
           <span class="lang lang-en">Experience</span>
           <span class="lang lang-tr">Deneyim</span>
         </a>
-        <a href="#projects">
-          <span class="lang lang-en">Projects</span>
-          <span class="lang lang-tr">Projeler</span>
-        </a>
         <a href="#education">
           <span class="lang lang-en">Education</span>
           <span class="lang lang-tr">Eğitim</span>
         </a>
-        <a href="#certifications">
-          <span class="lang lang-en">Certifications</span>
-          <span class="lang lang-tr">Sertifikalar</span>
-        </a>
         <a href="#skills">
           <span class="lang lang-en">Skills</span>
           <span class="lang lang-tr">Yetenekler</span>
+        </a>
+        <a href="#projects">
+          <span class="lang lang-en">Projects</span>
+          <span class="lang lang-tr">Projeler</span>
+        </a>
+        <a href="#certifications">
+          <span class="lang lang-en">Certifications</span>
+          <span class="lang lang-tr">Sertifikalar</span>
         </a>
         <a href="#contact">
           <span class="lang lang-en">Contact</span>
@@ -62,24 +62,54 @@
         </a>
       </nav>
 
-      <div class="header-actions">
+      <div class="header-right">
         <div class="header-social">
-          <a href="https://tr.linkedin.com/in/seydi-ciplak-39b137163" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon si-linkedin">in</a>
-          <a href="https://github.com/seydi44" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon si-github">GH</a>
-          <a href="https://youtube.com/@seydiciplak" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon si-youtube">▶</a>
+          <a
+            href="https://tr.linkedin.com/in/seydi-ciplak-39b137163"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            class="social-icon"
+          >in</a>
+          <a
+            href="https://github.com/seydi44"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            class="social-icon"
+          >GH</a>
+          <a
+            href="https://youtube.com/@seydiciplak"
+            target="_blank"
+            rel="noopener"
+            aria-label="YouTube"
+            class="social-icon"
+          >▶</a>
         </div>
 
-        <!-- LANG SWITCH SLIDER: EN LEFT (DEFAULT), TR RIGHT -->
-        <div class="lang-switch" aria-label="Language switcher" data-lang="en">
-          <button class="lang-switch-label" data-lang-target="en">EN</button>
-          <button class="lang-switch-label" data-lang-target="tr">TR</button>
-          <div class="lang-switch-knob"></div>
+        <!-- Dil switch: default EN -->
+        <div class="lang-switch" data-lang="en" aria-label="Language switcher">
+          <button
+            type="button"
+            class="lang-switch-label"
+            data-lang-target="en"
+          >
+            EN
+          </button>
+          <button
+            type="button"
+            class="lang-switch-label"
+            data-lang-target="tr"
+          >
+            TR
+          </button>
+          <span class="lang-switch-knob"></span>
         </div>
+
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
     </div>
   </header>
 
@@ -89,39 +119,53 @@
       <div class="container hero-grid">
         <div class="hero-left">
           <p class="hero-kicker">
-            <span class="lang lang-en">Azure · Data &amp; AI · Power Platform · Multi-cloud</span>
-            <span class="lang lang-tr">Azure · Veri &amp; Yapay Zekâ · Power Platform · Multi-cloud</span>
+            <span class="lang lang-en">Azure · Data &amp; AI · Power Platform · Oracle Cloud</span>
+            <span class="lang lang-tr">Azure · Veri &amp; Yapay Zekâ · Power Platform · Oracle Cloud</span>
           </p>
 
-          <h1 class="lang lang-en">Hi, I’m <span class="accent">Seydi Çıplak</span>.</h1>
-          <h1 class="lang lang-tr">Merhaba, ben <span class="accent">Seydi Çıplak</span>.</h1>
+          <h1 class="hero-title">
+            <span class="lang lang-en">Hi, I’m <span class="accent">Seydi Çıplak</span>.</span>
+            <span class="lang lang-tr">Merhaba, ben <span class="accent">Seydi Çıplak</span>.</span>
+          </h1>
+
+          <div class="hero-cert-row">
+            <span class="badge-pill primary">
+              Microsoft Certified · Azure AI Engineer Associate
+            </span>
+            <span class="badge-pill primary">
+              Microsoft Certified · Azure for SAP Workloads Specialty
+            </span>
+            <span class="badge-pill outline">
+              Oracle Cloud Infrastructure · GenAI Professional
+            </span>
+          </div>
+          <div class="hero-cert-row secondary">
+            <span class="badge-pill ghost">
+              Exam AZ-305 · Designing Microsoft Azure Infrastructure Solutions
+            </span>
+            <span class="badge-pill ghost">
+              Exam AZ-104 · Microsoft Azure Administrator
+            </span>
+          </div>
 
           <p class="hero-summary lang lang-en">
-            I’m a Cloud Engineer in the Data &amp; AI team at D Tech Cloud. I design and deliver scalable, secure AI and cloud
-            solutions on Microsoft Azure using Azure AI, Azure AI Foundry, Azure OpenAI and core Azure services. I build analytics
-            and business applications with Power BI, Microsoft Fabric, Power Apps and Power Automate, and explore multi-cloud and
-            on-prem LLM/SLM architectures (Oracle Cloud, AWS, GCP, DeepSeek) for enterprise-grade AI.
+            I work as a Cloud Engineer in the Data &amp; AI team at D Tech Cloud. I design secure and production-ready
+            AI solutions on Microsoft Azure using Azure OpenAI, Azure AI Services and Azure Machine Learning, and build
+            analytics platforms with Power BI, Fabric and SQL. I also have hands-on experience with Azure Web Apps,
+            APIs, security, governance and cost optimization, plus Oracle Cloud Infrastructure and GenAI.
           </p>
           <p class="hero-summary lang lang-tr">
-            D Tech Cloud’ta Data &amp; AI ekibinde Cloud Engineer olarak çalışıyorum. Azure AI, Azure AI Foundry, Azure OpenAI ve
-            temel Azure servislerini kullanarak ölçeklenebilir ve güvenli bulut &amp; yapay zekâ çözümleri tasarlıyor ve
-            geliştiriyorum. Power BI, Microsoft Fabric, Power Apps ve Power Automate ile analitik ve iş uygulamaları geliştiriyor;
-            Oracle Cloud, AWS, GCP ve DeepSeek ile multi-cloud ve on-prem LLM/SLM mimarileri üzerinde çalışarak kurumsal seviye
-            AI çözümleri oluşturuyorum.
+            D Tech Cloud’da Data &amp; AI ekibinde Cloud Engineer olarak çalışıyorum. Azure OpenAI, Azure AI Services
+            ve Azure Machine Learning kullanarak güvenli ve üretim ortamına hazır yapay zekâ çözümleri tasarlıyor;
+            Power BI, Fabric ve SQL ile analitik platformlar geliştiriyorum. Azure Web Apps, API geliştirme, güvenlik,
+            yönetişim ve maliyet optimizasyonu ile Oracle Cloud Infrastructure ve GenAI konularında da deneyimliyim.
           </p>
-
-          <div class="hero-badges">
-            <span class="hero-badge hero-badge-ms">Microsoft Certified · Azure AI Engineer Associate</span>
-            <span class="hero-badge hero-badge-ms">Microsoft Certified · Azure for SAP Workloads Specialty</span>
-            <span class="hero-badge hero-badge-oracle">Oracle Cloud Infrastructure · GenAI Professional</span>
-          </div>
 
           <div class="hero-actions">
             <a href="#contact" class="btn btn-primary">
               <span class="lang lang-en">Let’s work together</span>
               <span class="lang lang-tr">Birlikte çalışalım</span>
             </a>
-            <!-- CV PDF'ini assets/seydi-cv-2025.pdf olarak koy -->
             <a href="assets/seydi-cv-2025.pdf" class="btn btn-outline" target="_blank">
               <span class="lang lang-en">Download CV (PDF)</span>
               <span class="lang lang-tr">CV’yi indir (PDF)</span>
@@ -134,10 +178,18 @@
               <span class="lang lang-tr">Beni burada bulabilirsiniz</span>
             </span>
             <div class="hero-social-list">
-              <a href="https://tr.linkedin.com/in/seydi-ciplak-39b137163" target="_blank" rel="noopener" class="pill pill-linkedin">LinkedIn</a>
-              <a href="https://github.com/seydi44" target="_blank" rel="noopener" class="pill pill-github">GitHub</a>
-              <a href="https://youtube.com/@seydiciplak" target="_blank" rel="noopener" class="pill pill-youtube">YouTube</a>
-              <a href="mailto:seydiciplak@gmail.com" class="pill pill-email">Email</a>
+              <a href="https://tr.linkedin.com/in/seydi-ciplak-39b137163" target="_blank" rel="noopener" class="pill pill-link">
+                LinkedIn
+              </a>
+              <a href="https://github.com/seydi44" target="_blank" rel="noopener" class="pill pill-link">
+                GitHub
+              </a>
+              <a href="https://youtube.com/@seydiciplak" target="_blank" rel="noopener" class="pill pill-link">
+                YouTube
+              </a>
+              <a href="mailto:seydiciplak@gmail.com" class="pill pill-link">
+                Email
+              </a>
             </div>
           </div>
         </div>
@@ -145,19 +197,15 @@
         <aside class="hero-right">
           <div class="profile-card">
             <div class="profile-avatar">
-              <!-- Fotoğrafını assets/seydi-profile.jpg olarak koy -->
               <img src="assets/seydi-profile.jpg" alt="Seydi Çıplak" />
             </div>
-            <h2 class="lang lang-en">Cloud &amp; AI-focused Engineer</h2>
-            <h2 class="lang lang-tr">Bulut ve Yapay Zekâ Odaklı Mühendis</h2>
-
-            <p class="lang lang-en">
-              Designing Azure-based cloud, AI and data platforms that connect business requirements with production-ready solutions.
-            </p>
-            <p class="lang lang-tr">
-              İş ihtiyaçlarını üretim ortamına hazır çözümlerle buluşturan Azure tabanlı bulut, yapay zekâ ve veri platformları tasarlıyorum.
-            </p>
-
+            <div class="profile-main">
+              <h2>Seydi Çıplak</h2>
+              <p class="profile-role">
+                <span class="lang lang-en">Cloud Engineer, D Tech Cloud (Data &amp; AI)</span>
+                <span class="lang lang-tr">Cloud Engineer, D Tech Cloud (Data &amp; AI)</span>
+              </p>
+            </div>
             <dl class="profile-meta">
               <div>
                 <dt>
@@ -168,17 +216,10 @@
               </div>
               <div>
                 <dt>
-                  <span class="lang lang-en">Current role</span>
-                  <span class="lang lang-tr">Güncel pozisyon</span>
-                </dt>
-                <dd>Cloud Engineer, D Tech Cloud (Data &amp; AI)</dd>
-              </div>
-              <div>
-                <dt>
                   <span class="lang lang-en">Focus</span>
-                  <span class="lang lang-tr">Odak alanları</span>
+                  <span class="lang lang-tr">Odak</span>
                 </dt>
-                <dd>Azure, Data &amp; AI, Power Platform</dd>
+                <dd>Azure, Data &amp; AI, Power Platform, Oracle Cloud</dd>
               </div>
               <div>
                 <dt>
@@ -196,42 +237,44 @@
     <!-- HIGHLIGHTS -->
     <section class="section highlights">
       <div class="container highlights-grid">
-        <div class="highlight-card">
+        <article class="highlight-card">
           <h3>
             <span class="lang lang-en">Cloud &amp; Azure Platform</span>
             <span class="lang lang-tr">Bulut ve Azure Platformu</span>
           </h3>
           <p class="lang lang-en">
-            End-to-end Azure architecture, security, governance and automation for enterprise workloads.
+            Designing secure and scalable Azure architectures for enterprise workloads: web apps, APIs, infra and security.
           </p>
           <p class="lang lang-tr">
-            Kurumsal iş yükleri için uçtan uca Azure mimarisi, güvenlik, yönetişim ve otomasyon.
+            Kurumsal iş yükleri için web uygulamaları, API’ler, altyapı ve güvenliği kapsayan güvenli ve ölçeklenebilir Azure mimarileri.
           </p>
-        </div>
-        <div class="highlight-card">
+        </article>
+
+        <article class="highlight-card">
           <h3>
-            <span class="lang lang-en">AI &amp; Data</span>
-            <span class="lang lang-tr">Yapay Zekâ ve Veri</span>
+            <span class="lang lang-en">AI &amp; Analytics</span>
+            <span class="lang lang-tr">Yapay Zekâ ve Analitik</span>
           </h3>
           <p class="lang lang-en">
-            Designing AI assistants, evaluation frameworks and analytics solutions using Azure OpenAI, Cognitive Services, Power BI and Fabric.
+            Building AI assistants, evaluation frameworks and reporting solutions with Azure OpenAI, Power BI and Fabric.
           </p>
           <p class="lang lang-tr">
-            Azure OpenAI, Cognitive Services, Power BI ve Fabric kullanarak AI asistanları, değerlendirme framework’leri ve analitik çözümler tasarlıyorum.
+            Azure OpenAI, Power BI ve Fabric ile AI asistanları, değerlendirme framework’leri ve raporlama çözümleri geliştiriyorum.
           </p>
-        </div>
-        <div class="highlight-card">
+        </article>
+
+        <article class="highlight-card">
           <h3>
             <span class="lang lang-en">Apps &amp; Automation</span>
             <span class="lang lang-tr">Uygulamalar ve Otomasyon</span>
           </h3>
           <p class="lang lang-en">
-            Building web apps, APIs and workflows with Azure Web Apps, Functions, Power Apps and Power Automate.
+            Automating business processes and building apps with Power Apps, Power Automate, Azure Functions and Logic Apps.
           </p>
           <p class="lang lang-tr">
-            Azure Web Apps, Functions, Power Apps ve Power Automate ile web uygulamaları, API’ler ve iş akışları geliştiriyorum.
+            Power Apps, Power Automate, Azure Functions ve Logic Apps ile iş süreçlerini otomatikleştiriyor ve uygulamalar geliştiriyorum.
           </p>
-        </div>
+        </article>
       </div>
     </section>
 
@@ -245,9 +288,9 @@
         <div class="two-columns">
           <div>
             <p class="lang lang-en">
-              I am an Electrical and Electronics Engineer with a strong academic foundation in information technologies
-              and electrical engineering. I hold a Master’s in Information Technologies from Yıldız Technical University and
-              I am currently pursuing a Master’s in Electrical Engineering at Istanbul Technical University.
+              I am an Electrical and Electronics Engineer with a strong academic background in information technologies
+              and electrical engineering. I hold a Master’s in Information Technologies from Yıldız Technical University
+              and I am currently pursuing a Master’s in Electrical Engineering at Istanbul Technical University.
             </p>
             <p class="lang lang-tr">
               Bilgi teknolojileri ve elektrik mühendisliği alanlarında güçlü akademik altyapıya sahip bir Elektrik-Elektronik
@@ -256,26 +299,26 @@
             </p>
 
             <p class="lang lang-en">
-              Throughout my career I have designed and optimized Azure-based infrastructures, delivered customer-facing
-              workshops and trainings, and supported Microsoft Specialization audits. I enjoy translating complex cloud and
-              AI concepts into practical solutions for enterprise customers.
+              Throughout my career I have designed and optimized Azure-based infrastructures, led workshops and trainings,
+              and supported Microsoft Specialization audits. I enjoy translating complex Cloud &amp; AI concepts into
+              practical solutions for enterprise customers.
             </p>
             <p class="lang lang-tr">
-              Kariyerim boyunca Azure tabanlı altyapılar tasarlayıp optimize ettim, müşteri odaklı workshop ve eğitimler verdim
-              ve Microsoft Specialization denetim süreçlerini destekledim. Karmaşık bulut ve yapay zekâ kavramlarını kurumsal
-              müşteriler için somut çözümlere dönüştürmeyi seviyorum.
+              Kariyerim boyunca Azure tabanlı altyapılar tasarlayıp optimize ettim, workshop ve eğitimler verdim
+              ve Microsoft Specialization denetim süreçlerini destekledim. Karmaşık Cloud &amp; AI kavramlarını
+              kurumsal müşteriler için somut çözümlere dönüştürmeyi seviyorum.
             </p>
           </div>
           <div>
             <p class="lang lang-en">
-              Today my main focus is Microsoft’s Cloud &amp; AI stack: Azure, Azure OpenAI, Azure AI Services, Power Platform,
-              Power BI and Fabric. I design secure, cost-efficient and maintainable solutions that help organizations adopt AI
-              safely and responsibly, including on-prem and hybrid LLM/SLM architectures.
+              Today my main focus is Microsoft’s Cloud &amp; AI stack (Azure, Azure OpenAI, Azure AI Services, Power Platform,
+              Power BI, Fabric) and Oracle Cloud Infrastructure. I design secure, cost-efficient and maintainable solutions
+              that help organizations adopt AI safely and responsibly.
             </p>
             <p class="lang lang-tr">
-              Bugün ana odağım Microsoft’un Cloud &amp; AI ekosistemi: Azure, Azure OpenAI, Azure AI Services, Power Platform,
-              Power BI ve Fabric. Kurumların yapay zekâyı güvenli ve sorumlu şekilde benimsemesine yardımcı olan, on-prem ve
-              hibrit LLM/SLM mimarilerini de içeren güvenli, maliyet-etkin ve sürdürülebilir çözümler tasarlıyorum.
+              Bugün ana odağım Microsoft’un Cloud &amp; AI ekosistemi (Azure, Azure OpenAI, Azure AI Services, Power Platform,
+              Power BI, Fabric) ve Oracle Cloud Infrastructure. Kurumların yapay zekâyı güvenli ve sorumlu şekilde
+              benimsemesine yardımcı olan güvenli, maliyet-etkin ve sürdürülebilir çözümler tasarlıyorum.
             </p>
 
             <ul class="about-list">
@@ -291,7 +334,8 @@
                   <span class="lang lang-en">Open to:</span>
                   <span class="lang lang-tr">Açık olduğum roller:</span>
                 </strong>
-                &nbsp;<span class="lang lang-en">Cloud, data &amp; AI roles in the Microsoft ecosystem.</span>
+                &nbsp;
+                <span class="lang lang-en">Cloud, data &amp; AI roles in the Microsoft ecosystem.</span>
                 <span class="lang lang-tr">Microsoft ekosisteminde bulut, veri ve yapay zekâ odaklı roller.</span>
               </li>
               <li>
@@ -322,9 +366,7 @@
               <span class="timeline-location">Istanbul · Türkiye</span>
             </div>
             <h3>
-              <span class="lang lang-en">Cloud Engineer</span>
-              <span class="lang lang-tr">Cloud Engineer</span>
-              <span> @ D Tech Cloud (Data &amp; AI)</span>
+              Cloud Specialist @ D Tech Cloud (Data &amp; AI)
             </h3>
             <p class="lang lang-en">
               Designing and delivering Azure-based Cloud &amp; AI solutions with a focus on Microsoft’s Data &amp; AI stack.
@@ -333,10 +375,20 @@
               Microsoft’un Data &amp; AI teknolojilerine odaklanan Azure tabanlı Cloud &amp; AI çözümleri tasarlıyor ve hayata geçiriyorum.
             </p>
             <ul>
-              <li>Design and implement scalable, secure Azure architectures using services such as App Service, Functions, API Management and AKS.</li>
-              <li>Build AI-powered solutions with Azure OpenAI, Azure AI Services and Azure Machine Learning, including evaluation frameworks for LLMs/SLMs.</li>
-              <li>Develop business applications and automation with Power Apps, Power Automate and Dataverse.</li>
-              <li>Deliver demos, POCs and workshops on Azure AI, Data &amp; AI and Power Platform for customers and internal teams.</li>
+              <li>
+                Design and implement scalable, secure Azure architectures using services such as App Service, Functions,
+                API Management and Azure Kubernetes Service.
+              </li>
+              <li>
+                Build AI-powered solutions with Azure OpenAI, Azure AI Services and Azure Machine Learning, including
+                evaluation frameworks for large language models.
+              </li>
+              <li>
+                Automate business processes and enterprise applications using Power Apps, Power Automate and Dataverse.
+              </li>
+              <li>
+                Deliver demos, POCs and workshops on Azure AI, Data &amp; AI and Power Platform for customers and internal teams.
+              </li>
             </ul>
           </article>
 
@@ -346,9 +398,7 @@
               <span class="timeline-location">Istanbul · Türkiye</span>
             </div>
             <h3>
-              <span class="lang lang-en">Cloud Solutions Assistant Specialist</span>
-              <span class="lang lang-tr">Cloud Solutions Assistant Specialist</span>
-              <span> @ Data Market Information Services Inc. (MSP)</span>
+              Cloud Solutions Assistant Specialist @ Data Market Information Services Inc. (MSP)
             </h3>
             <p class="lang lang-en">
               Azure specialist responsible for enterprise cloud projects, trainings and Microsoft Specialization audits.
@@ -370,9 +420,7 @@
               <span class="timeline-location">Istanbul · Türkiye</span>
             </div>
             <h3>
-              <span class="lang lang-en">Technical Units Manager</span>
-              <span class="lang lang-tr">Teknik Birimler Yöneticisi</span>
-              <span> @ Zentech Service (Apple ASP)</span>
+              Technical Units Manager @ Zentech Service (Apple ASP)
             </h3>
             <ul>
               <li>Supervised and coordinated technical service teams, ensuring Apple Service Excellence Criteria.</li>
@@ -386,7 +434,7 @@
               <span class="timeline-date">May 2019 – Jul 2019</span>
               <span class="timeline-location">Istanbul · Türkiye</span>
             </div>
-            <h3>Engineering Intern <span>@ TEİAŞ</span></h3>
+            <h3>Engineering Intern @ TEİAŞ</h3>
             <ul>
               <li>Reinforced theoretical knowledge with hands-on experience in power systems.</li>
               <li>Improved understanding of workplace organization and production processes.</li>
@@ -398,7 +446,7 @@
               <span class="timeline-date">Jul 2019 – Sep 2019</span>
               <span class="timeline-location">Istanbul · Türkiye</span>
             </div>
-            <h3>Engineering Intern <span>@ ABB</span></h3>
+            <h3>Engineering Intern @ ABB</h3>
             <ul>
               <li>Received training in power and automation technologies and their practical applications.</li>
               <li>Completed courses in solar and robotics and strengthened understanding of corporate ethics.</li>
@@ -430,8 +478,8 @@
               sentiment analysis, improving response accuracy and reducing manual content generation effort by 40%.
             </p>
             <p class="lang lang-tr">
-              Azure OpenAI tabanlı bir çözüm geliştirerek metin üretimi ve duygu analizi gibi doğal dil yetenekleri
-              ekledim; yanıt doğruluğunu artırırken manuel içerik üretim ihtiyacını %40 azalttım.
+              Azure OpenAI tabanlı bir çözüm geliştirerek metin üretimi ve duygu analizi gibi doğal dil yetenekleri ekledim;
+              yanıt doğruluğunu artırırken manuel içerik üretim ihtiyacını %40 azalttım.
             </p>
           </article>
 
@@ -444,7 +492,7 @@
             </p>
             <p class="lang lang-tr">
               Web uygulamalarını korumak için Azure WAF konumlandırdım; logları Azure Sentinel ve Azure Monitor ile entegre ederek
-              DDoS, SQL injection ve XSS gibi tehditlere karşı güvenliği önemli ölçüde artırdım.
+              DDoS, SQL injection ve XSS gibi tehditlere karşı güvenliği %99 oranında artırdım.
             </p>
           </article>
 
@@ -469,8 +517,8 @@
               improving data redundancy and access speed by 50%.
             </p>
             <p class="lang lang-tr">
-              On-prem dosya sunucularını Azure File Sync ve Azure Files ile entegre eden bir dosya senkronizasyon çözümü
-              tasarladım; veri yedekliliğini ve erişim hızını %50 artırdım.
+              On-prem dosya sunucularını Azure File Sync ve Azure Files ile entegre eden bir dosya senkronizasyon çözümü tasarladım;
+              veri yedekliliğini ve erişim hızını %50 artırdım.
             </p>
           </article>
 
@@ -483,7 +531,7 @@
             </p>
             <p class="lang lang-tr">
               Azure Arc ile on-prem SQL Server kaynakları için merkezi yönetim sağladım; Azure Monitor ve Azure Policy
-              kullanarak operasyonel verimliliği önemli ölçüde artırdım.
+              kullanarak operasyonel verimliliği %50 artırdım.
             </p>
           </article>
 
@@ -637,47 +685,6 @@
       </div>
     </section>
 
-    <!-- CERTIFICATIONS -->
-    <section class="section" id="certifications">
-      <div class="container">
-        <h2 class="section-title">
-          <span class="lang lang-en">Certifications</span>
-          <span class="lang lang-tr">Sertifikalar</span>
-        </h2>
-
-        <div class="cards-grid cards-certifications">
-          <article class="card">
-            <p class="cert-provider">Microsoft</p>
-            <h3>
-              <span class="lang lang-en">Azure &amp; AI Certifications</span>
-              <span class="lang lang-tr">Azure &amp; Yapay Zekâ Sertifikaları</span>
-            </h3>
-            <ul class="cert-list">
-              <li>Microsoft Certified: <strong>Azure AI Engineer Associate</strong> (Exam AI-102)</li>
-              <li>Microsoft Certified: <strong>Azure for SAP Workloads Specialty</strong> (Exam AZ-120)</li>
-              <li>Exam <strong>AZ-305</strong> – Designing Microsoft Azure Infrastructure Solutions</li>
-              <li>Exam <strong>AZ-104</strong> – Microsoft Azure Administrator</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <p class="cert-provider">Oracle</p>
-            <h3>
-              <span class="lang lang-en">Oracle Cloud Infrastructure &amp; GenAI</span>
-              <span class="lang lang-tr">Oracle Cloud Infrastructure &amp; GenAI</span>
-            </h3>
-            <ul class="cert-list">
-              <li><strong>Oracle Exadata 2025 Solution Engineer Specialist</strong></li>
-              <li><strong>Oracle Cloud Infrastructure 2025 Solution Engineer Specialist</strong></li>
-              <li><strong>OCI 2025 Certified AI Foundations Associate</strong> (valid until 2027)</li>
-              <li><strong>OCI 2025 Certified Architect Associate</strong> (valid until 2027)</li>
-              <li><strong>OCI 2025 Certified Generative AI Professional</strong> (valid until 2027)</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- SKILLS -->
     <section class="section" id="skills">
       <div class="container">
@@ -694,24 +701,21 @@
             <div class="tag-list">
               <span class="tag">Microsoft Azure</span>
               <span class="tag">Azure AI</span>
-              <span class="tag">Azure AI Foundry</span>
               <span class="tag">Azure OpenAI</span>
               <span class="tag">Azure Machine Learning</span>
               <span class="tag">Azure Bot Services</span>
               <span class="tag">Azure WAF</span>
-              <span class="tag">Azure Sentinel</span>
+              <span class="tag">Microsoft Sentinel</span>
               <span class="tag">Azure Site Recovery</span>
               <span class="tag">Azure File Sync</span>
               <span class="tag">Azure Arc</span>
-              <span class="tag">Microsoft Fabric</span>
               <span class="tag">Power Platform</span>
               <span class="tag">Power BI</span>
+              <span class="tag">Microsoft Fabric</span>
               <span class="tag">Power Apps</span>
               <span class="tag">Power Automate</span>
               <span class="tag">Oracle Cloud Infrastructure</span>
-              <span class="tag">AWS</span>
-              <span class="tag">Google Cloud</span>
-              <span class="tag">DeepSeek (on-prem LLM)</span>
+              <span class="tag">GenAI Solutions</span>
             </div>
           </div>
           <div>
@@ -747,6 +751,39 @@
       </div>
     </section>
 
+    <!-- CERTIFICATIONS -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="lang lang-en">Certifications</span>
+          <span class="lang lang-tr">Sertifikalar</span>
+        </h2>
+
+        <div class="cert-grid">
+          <article class="card cert-card">
+            <h3>Microsoft Azure</h3>
+            <ul>
+              <li>Microsoft Certified: Azure AI Engineer Associate (AI-102)</li>
+              <li>Microsoft Certified: Azure for SAP Workloads Specialty (AZ-120)</li>
+              <li>Exam AZ-305 – Designing Microsoft Azure Infrastructure Solutions</li>
+              <li>Exam AZ-104 – Microsoft Azure Administrator</li>
+            </ul>
+          </article>
+
+          <article class="card cert-card">
+            <h3>Oracle Cloud Infrastructure</h3>
+            <ul>
+              <li>Oracle Exadata 2025 Solution Engineer Specialist</li>
+              <li>Oracle Cloud Infrastructure 2025 Solution Engineer Specialist</li>
+              <li>Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate</li>
+              <li>Oracle Cloud Infrastructure 2025 Certified Architect Associate</li>
+              <li>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT -->
     <section class="section" id="contact">
       <div class="container">
@@ -759,11 +796,11 @@
           <div>
             <p class="lang lang-en">
               Interested in Azure, AI, data or reporting projects? Feel free to reach out for full-time roles, consulting
-              or collaboration opportunities in the Microsoft ecosystem.
+              or collaboration opportunities in the Microsoft or Oracle ecosystem.
             </p>
             <p class="lang lang-tr">
-              Azure, yapay zekâ, veri veya raporlama projeleriyle ilgileniyorsanız; Microsoft ekosisteminde tam zamanlı roller,
-              danışmanlık veya proje iş birlikleri için benimle iletişime geçebilirsiniz.
+              Azure, yapay zekâ, veri veya raporlama projeleriyle ilgileniyorsanız; Microsoft veya Oracle ekosisteminde
+              tam zamanlı roller, danışmanlık veya proje iş birlikleri için benimle iletişime geçebilirsiniz.
             </p>
 
             <ul class="contact-list">
@@ -783,21 +820,19 @@
               </li>
               <li>
                 <span>LinkedIn</span>
-                <a href="https://tr.linkedin.com/in/seydi-ciplak-39b137163" target="_blank" rel="noopener">
-                  linkedin.com/in/seydi-ciplak-39b137163
-                </a>
+                <a
+                  href="https://tr.linkedin.com/in/seydi-ciplak-39b137163"
+                  target="_blank"
+                  rel="noopener"
+                >linkedin.com/in/seydi-ciplak-39b137163</a>
               </li>
               <li>
                 <span>GitHub</span>
-                <a href="https://github.com/seydi44" target="_blank" rel="noopener">
-                  github.com/seydi44
-                </a>
-              </li>
-              <li>
-                <span>YouTube</span>
-                <a href="https://youtube.com/@seydiciplak" target="_blank" rel="noopener">
-                  youtube.com/@seydiciplak
-                </a>
+                <a
+                  href="https://github.com/seydi44"
+                  target="_blank"
+                  rel="noopener"
+                >github.com/seydi44</a>
               </li>
               <li>
                 <span>
