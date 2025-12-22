@@ -28,20 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ------------ LANGUAGE SWITCH ------------ */
   const langSwitch = document.querySelector(".lang-switch");
   const langLabels = document.querySelectorAll(".lang-switch-label");
-  const langElements = document.querySelectorAll(".lang");
 
   function setLanguage(lang) {
     const active = lang === "tr" ? "tr" : "en"; // sadece en / tr
     document.documentElement.lang = active;
 
-    // EN / TR text göster
-    langElements.forEach((el) => {
-      if (el.classList.contains("lang-" + active)) {
-        el.style.display = "";
-      } else {
-        el.style.display = "none";
-      }
-    });
+    // Body class üzerinden CSS ile göster/gizle
+    document.body.classList.remove("lang-en", "lang-tr");
+    document.body.classList.add("lang-" + active);
 
     // Slider knob pozisyonu
     if (langSwitch) {
@@ -53,9 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage("en");
 
   // Slider butonları
-  Array.from(langLabels).forEach((btn) => {
+  langLabels.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const targetLang = btn.dataset.langTarget; // "en" ya da "tr"
+      const targetLang = btn.dataset.langTarget; // "en" veya "tr"
       setLanguage(targetLang);
     });
   });

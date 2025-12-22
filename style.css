@@ -39,10 +39,27 @@ body {
   line-height: 1.6;
 }
 
-/* İngilizce default olsun, TR JS ile açılacak */
-.lang.lang-tr {
+/* Dil görünümleri – EN varsayılan */
+.lang {
+  display: inline;
+}
+
+/* Varsayılan: body.lang-en */
+body.lang-en .lang.lang-en {
+  display: inline;
+}
+body.lang-en .lang.lang-tr {
   display: none;
 }
+
+/* Türkçe moda geçince: body.lang-tr */
+body.lang-tr .lang.lang-en {
+  display: none;
+}
+body.lang-tr .lang.lang-tr {
+  display: inline;
+}
+
 
 a {
   color: inherit;
